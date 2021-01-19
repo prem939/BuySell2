@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/btm_home"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="Home" />
+    <item
+        android:id="@+id/btm_supplier"
+        android:icon="@drawable/ic_suppliers"
+        android:title="My Supplies" />
+    <item
+        android:id="@+id/btm_favItems"
+        android:icon="@drawable/ic_toy"
+        android:title="Fav Products" />
+    <item
+        android:id="@+id/btm_purchaseOrders"
+        android:icon="@drawable/ic_customers"
+        android:title="Purchase orders" />
+    <item
+        android:id="@+id/btm_order"
+        android:icon="@drawable/ic_orders"
+        android:title="Orders" />
+
+</menu>

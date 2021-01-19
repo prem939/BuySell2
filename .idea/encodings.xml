@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable-hdpi/roundcorner.xml" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/bgmain.png" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/layout/custom_common_popup.xml" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/layout/custom_common_popup_for_otp.xml" charset="windows-1251" />
+  </component>
+</project>

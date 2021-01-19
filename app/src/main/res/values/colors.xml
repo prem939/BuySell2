@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimaryDark">#ffffff</color>
+    <color name="colorPrimary">#00b86a</color>
+    <color name="colorAccent">#525252</color>
+
+    <color name="Orange">#F9AA33</color>
+    <color name="Primary">#344955</color>
+    <color name="PrimaryDark">#232f34</color>
+    <color name="black">#000000</color>
+    <color name="gray">#B3B3B3</color>
+    <color name="app_color">#00CF77</color>
+    <color name="white">#ffffff</color>
+    <color name="transparent">#00000000</color>
+    <color name="gray_dark">#4B4A45</color>
+    <color name="gray_light">#D8D8D8</color>
+    <color name="lite_green">#8BFF90</color>
+
+    <color name="dark">#FF222222</color>
+    <color name="light">#FFEEEEEE</color>
+    <color name="orange">#FFA500</color>
+    <color name="gray_lite2">#808080</color>
+    <color name="yellow_lite">#F6EA82</color>
+    <color name="yellow">#FFE500</color>
+
+
+    <color name="black_semi_transparent">#B2000000</color>
+    <color name="background">#e5e5e5</color>
+    <color name="half_black">#808080</color>
+    <color name="white_pressed">#f1f1f1</color>
+
+
+    <color name="purple">#7c4dff</color>
+    <color name="yellow2">#ffb300</color>
+    <color name="blue">#00bfa5</color>
+    <color name="green">#388E3C</color>
+    <color name="dark_green">#005904</color>
+    <color name="darkblue">#0076a5</color>
+    <color name="darkpurple">#a569bd</color>
+    <color name="pinky">#fe104d</color>
+    <color name="dark_red">#D32F2F</color>
+    <color name="lightgray">#808080</color>
+    <color name="menuColor">#353b4f</color>
+
+    <color name="back_ground">@color/gray_light</color>
+</resources>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_crSupplier"
+            android:icon="@drawable/ic_cr_supplier"
+            android:title="@string/cr_upd_supp" />
+        <item
+            android:id="@+id/nav_crSupplierItem"
+            android:icon="@drawable/ic_items"
+            android:title="@string/cr_upd_item" />
+        <item
+            android:id="@+id/nav_promo"
+            android:icon="@drawable/ic_promo"
+            android:title="@string/cr_upd_promo" />
+        <item
+            android:id="@+id/nav_sites"
+            android:icon="@drawable/ic_site"
+            android:title="Create Site" />
+        <item
+            android:id="@+id/nav_items"
+            android:icon="@drawable/ic_toy"
+            android:title="Items" />
+        <item
+            android:id="@+id/nav_so"
+            android:icon="@drawable/ic_so"
+            android:title="SO's" />
+        <item
+            android:id="@+id/nav_po"
+            android:icon="@drawable/ic_po"
+            android:title="PO's" />
+        <item
+            android:id="@+id/nav_logOut"
+            android:icon="@drawable/ic_out"
+            android:title="Log out" />
+    </group>
+</menu>

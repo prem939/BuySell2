@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:background="@color/back_ground"
+    android:orientation="vertical">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/_5sdp"
+        card_view:cardBackgroundColor="@color/white"
+        card_view:cardCornerRadius="10dp"
+        card_view:cardElevation="5dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_width="@dimen/_15sdp"
+                        android:layout_height="@dimen/_15sdp"
+                        android:backgroundTint="@color/dark_red"
+                        android:background="@drawable/ic_cancel"
+                        android:id="@+id/imgCancel"
+                        android:visibility="gone"
+                        android:layout_alignParentRight="true"
+                        android:layout_margin="@dimen/_5sdp">
+                    </ImageView>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingLeft="@dimen/_20sdp"
+                            android:paddingRight="@dimen/_20sdp"
+                            android:weightSum="3">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:id="@+id/img_item"
+                                    android:layout_width="@dimen/_60sdp"
+                                    android:layout_height="@dimen/_60sdp"
+                                    android:layout_margin="@dimen/_2sdp"
+                                    android:src="@drawable/no_image" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="2"
+                                android:background="@drawable/round"
+                                android:orientation="horizontal"
+                                android:weightSum="3">
+
+                                <TextView
+                                    android:id="@+id/txt_path"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="2"
+                                    android:paddingLeft="@dimen/_5sdp"
+                                    android:text="Uplode item image hear"
+                                    android:textColor="@color/gray_dark"
+                                    android:textSize="@dimen/_10ssp" />
+
+                                <Button
+                                    android:id="@+id/btn_uplode"
+                                    android:layout_width="0dp"
+                                    android:layout_height="@dimen/_12sdp"
+                                    android:layout_margin="@dimen/_10sdp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/round_gray"
+                                    android:text="uplode File"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/_8ssp" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/_15sdp"
+                            android:layout_marginRight="@dimen/_15sdp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="Item Name">
+                                    <EditText
+                                        android:id="@+id/edtItemName"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/_35sdp"
+                                        android:layout_gravity="center"
+                                        android:imeOptions="actionNext"
+                                        android:textCursorDrawable="@drawable/custom_edit_text_cursor"
+                                        android:paddingLeft="@dimen/_5sdp"
+                                        android:textSize="@dimen/_15sdp" />
+                                </com.google.android.material.textfield.TextInputLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="UOM">
+                                    <EditText
+                                        android:id="@+id/edtUOM"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/_35sdp"
+                                        android:layout_gravity="center"
+                                        android:imeOptions="actionNext"
+                                        android:paddingLeft="@dimen/_5sdp"
+                                        android:textCursorDrawable="@drawable/custom_edit_text_cursor"
+                                        android:textSize="@dimen/_15sdp" />
+                                </com.google.android.material.textfield.TextInputLayout>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:orientation="vertical">
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="Price">
+
+                                    <EditText
+                                        android:id="@+id/edtPrice"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/_35sdp"
+                                        android:layout_gravity="center"
+                                        android:imeOptions="actionNext"
+                                        android:paddingLeft="@dimen/_5sdp"
+                                        android:textCursorDrawable="@drawable/custom_edit_text_cursor"
+                                        android:textSize="@dimen/_15sdp" />
+                                </com.google.android.material.textfield.TextInputLayout>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:orientation="vertical">
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="Delivery Charges">
+                                    <EditText
+                                        android:id="@+id/edtDeliveryCharges"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/_35sdp"
+                                        android:layout_gravity="center"
+                                        android:imeOptions="actionNext"
+                                        android:textCursorDrawable="@drawable/custom_edit_text_cursor"
+                                        android:paddingLeft="@dimen/_5sdp"
+                                        android:textSize="@dimen/_15sdp" />
+                                </com.google.android.material.textfield.TextInputLayout>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:orientation="vertical">
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="Tax Percentage">
+                                    <EditText
+                                        android:id="@+id/edtTaxPercentage"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/_35sdp"
+                                        android:layout_gravity="center"
+                                        android:textCursorDrawable="@drawable/custom_edit_text_cursor"
+                                        android:imeOptions="actionNext"
+                                        android:paddingLeft="@dimen/_5sdp"
+                                        android:textSize="@dimen/_15sdp" />
+                                </com.google.android.material.textfield.TextInputLayout>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:orientation="vertical">
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="Tax Amount">
+                                    <EditText
+                                        android:id="@+id/edtTaxAmount"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/_35sdp"
+                                        android:layout_gravity="center"
+                                        android:imeOptions="actionNext"
+                                        android:digits="0123456789"
+                                        android:textCursorDrawable="@drawable/custom_edit_text_cursor"
+                                        android:paddingLeft="@dimen/_5sdp"
+                                        android:textSize="@dimen/_15sdp" />
+                                </com.google.android.material.textfield.TextInputLayout>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:orientation="vertical">
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="3dp"
+                                    android:layout_weight=".28"
+                                    android:orientation="horizontal">
+
+                                    <Spinner
+                                        android:id="@+id/spinCategory"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/_35sdp"
+                                        android:layout_gravity="center"
+                                        android:layout_marginTop="2dp"
+                                        android:background="@color/transparent"
+                                        android:layout_marginLeft="5dp"
+                                        android:textSize="@dimen/_10sdp" />
+
+                                    <ImageView
+                                        android:layout_width="@dimen/_35sdp"
+                                        android:layout_height="@dimen/_35sdp"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_centerVertical="true"
+                                        android:layout_gravity="center"
+                                        android:src="@drawable/drop" />
+                                </RelativeLayout>
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/_1sdp"
+                                    android:layout_gravity="center"
+                                    android:background="@color/gray"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:orientation="vertical">
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="3dp"
+                                    android:layout_weight=".28"
+                                    android:orientation="horizontal">
+
+                                    <Spinner
+                                        android:id="@+id/spinSubCategory"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/_35sdp"
+                                        android:layout_gravity="center"
+                                        android:layout_marginTop="2dp"
+                                        android:background="@color/transparent"
+                                        android:layout_marginLeft="5dp"
+                                        android:textSize="@dimen/_10sdp" />
+
+                                    <ImageView
+                                        android:layout_width="@dimen/_35sdp"
+                                        android:layout_height="@dimen/_35sdp"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_centerVertical="true"
+                                        android:layout_gravity="center"
+                                        android:src="@drawable/drop" />
+                                </RelativeLayout>
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/_1sdp"
+                                    android:layout_gravity="center"
+                                    android:background="@color/gray"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:orientation="vertical">
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="3dp"
+                                    android:layout_weight=".28"
+                                    android:orientation="horizontal">
+
+                                    <Spinner
+                                        android:id="@+id/spinMeasureType"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/_35sdp"
+                                        android:layout_gravity="center"
+                                        android:layout_marginTop="2dp"
+                                        android:background="@color/transparent"
+                                        android:layout_marginLeft="5dp"
+                                        android:textSize="@dimen/_10sdp" />
+
+                                    <ImageView
+                                        android:layout_width="@dimen/_35sdp"
+                                        android:layout_height="@dimen/_35sdp"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_centerVertical="true"
+                                        android:layout_gravity="center"
+                                        android:src="@drawable/drop" />
+                                </RelativeLayout>
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/_1sdp"
+                                    android:layout_gravity="center"
+                                    android:background="@color/gray"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:orientation="vertical">
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="Qty">
+                                    <EditText
+                                        android:id="@+id/edtStock"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/_35sdp"
+                                        android:layout_gravity="center"
+                                        android:imeOptions="actionNext"
+                                        android:textCursorDrawable="@drawable/custom_edit_text_cursor"
+                                        android:paddingLeft="@dimen/_5sdp"
+                                        android:textSize="@dimen/_15sdp" />
+                                </com.google.android.material.textfield.TextInputLayout>
+                            </LinearLayout>
+                            <Button
+                                android:layout_width="@dimen/_200sdp"
+                                android:layout_height="@dimen/_30sdp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/round_navy_blue"
+                                android:paddingLeft="@dimen/_5sdp"
+                                android:paddingRight="@dimen/_5sdp"
+                                android:text="Create Supplier Item"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:id="@+id/btnCreateSupplierItem"
+                                android:textColor="@color/white"
+                                android:layout_marginBottom="@dimen/_10sdp"
+                                android:textSize="@dimen/_15ssp">
+                            </Button>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:visibility="gone"
+                                android:id="@+id/llBtns"
+                                android:layout_marginBottom="@dimen/_10sdp"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:gravity="center"
+                                android:layout_gravity="center">
+                                <Button
+                                    android:layout_width="@dimen/_90sdp"
+                                    android:layout_height="@dimen/_30sdp"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/round_navy_blue"
+                                    android:text="Update"
+                                    android:id="@+id/btnUpdItem"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/_15ssp">
+                                </Button>
+                                <Button
+                                    android:layout_width="@dimen/_90sdp"
+                                    android:layout_height="@dimen/_30sdp"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/round_gray"
+                                    android:text="@string/Cancel"
+                                    android:id="@+id/btnCancel"
+                                    android:layout_marginLeft="@dimen/_30sdp"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/_15ssp">
+                                </Button>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+            </ScrollView>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

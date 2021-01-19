@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/bgmain"
+        android:orientation="vertical"
+        android:padding="@dimen/_30sdp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_28sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:orientation="vertical">
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Name">
+                <EditText
+                    android:id="@+id/edtName"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp"
+                    android:textCursorDrawable="@drawable/custom_edit_text_cursor"
+                    android:layout_gravity="center"
+                    android:imeOptions="actionNext"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:textSize="@dimen/_13sdp" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:orientation="vertical">
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email">
+                <EditText
+                    android:id="@+id/etEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp"
+                    android:textCursorDrawable="@drawable/custom_edit_text_cursor"
+                    android:layout_gravity="center"
+                    android:imeOptions="actionNext"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:textSize="@dimen/_13sdp" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:orientation="vertical">
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Phone no">
+                <EditText
+                    android:id="@+id/etPhoneno"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp"
+                    android:textCursorDrawable="@drawable/custom_edit_text_cursor"
+                    android:layout_gravity="center"
+                    android:editable="false"
+                    android:imeOptions="actionNext"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:textSize="@dimen/_14sdp" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_5sdp">
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Change Password?"
+                android:buttonTint="@color/PrimaryDark"
+                android:textColor="@color/PrimaryDark"
+                android:textStyle="bold"
+                android:textSize="@dimen/_10ssp"
+                android:id="@+id/cbChangePwd">
+            </com.google.android.material.checkbox.MaterialCheckBox>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:visibility="gone"
+            android:id="@+id/llOldPwd"
+            android:orientation="vertical">
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Old Password">
+                <EditText
+                    android:id="@+id/etOldPwd"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp"
+                    android:textCursorDrawable="@drawable/custom_edit_text_cursor"
+                    android:layout_gravity="center"
+                    android:imeOptions="actionNext"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:textSize="@dimen/_13sdp" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:visibility="gone"
+            android:id="@+id/llNewPwd"
+            android:orientation="vertical">
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="New password">
+                <EditText
+                    android:id="@+id/etNewPwd"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp"
+                    android:textCursorDrawable="@drawable/custom_edit_text_cursor"
+                    android:layout_gravity="center"
+                    android:imeOptions="actionNext"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:textSize="@dimen/_13sdp" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:visibility="gone"
+            android:id="@+id/llConfPwd"
+            android:orientation="vertical">
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Confrom Password">
+                <EditText
+                    android:id="@+id/etConfPwd"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp"
+                    android:textCursorDrawable="@drawable/custom_edit_text_cursor"
+                    android:layout_gravity="center"
+                    android:imeOptions="actionNext"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:textSize="@dimen/_13sdp" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/_35sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnYesPopup"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_23sdp"
+                android:background="@drawable/round_navy_blue"
+                android:text="Update"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_8ssp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnNoPopup"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_23sdp"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:background="@drawable/round_gray"
+                android:text="@string/Cancel"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_8ssp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
